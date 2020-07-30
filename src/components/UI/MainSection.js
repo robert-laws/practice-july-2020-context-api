@@ -1,15 +1,23 @@
 import React from 'react';
 import UserList from '../Users/UserList';
-import NewUser from '../Users/NewUser';
+import NewUserForm from '../Users/NewUserForm';
+import TodosList from '../Todos/TodosList';
+import NewTodoForm from '../Todos/NewTodoForm';
 
 const MainSection = () => {
   return (
     <main>
-      <h3>Website Content</h3>
-      <hr />
-      <UserList />
-      <hr />
-      <NewUser />
+      <section>
+        <h3>Todo App</h3>
+        <hr />
+        <UserList />
+        <hr />
+        <NewUserForm />
+      </section>
+      <section>
+        <TodosList />
+        <NewTodoForm />
+      </section>
     </main>
   );
 };
